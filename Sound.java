@@ -1,4 +1,4 @@
-package minitennis;
+package WallBall;
 
 import java.applet.Applet;
 import java.applet.AudioClip;
