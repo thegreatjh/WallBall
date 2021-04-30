@@ -8,8 +8,8 @@ public class Ball
 
     private static final int DIAMETER = 30;
 
-    int x = 0;
-    int y = 0;
+    double x = 0;
+    double y = 0;
     double xa = 1;
     double ya = 1;
     private Game wallBall;
@@ -47,8 +47,8 @@ public class Ball
         if (changeDirection) {
             Sound.BALL.play();
         }
-        x = x + (int) xa;
-        y = y + (int) ya;
+        x = x + xa;
+        y = y + ya;
     }
 
     private boolean collision()
@@ -58,11 +58,11 @@ public class Ball
 
     public void paint(Graphics2D g)
     {
-        g.fillOval(x, y, DIAMETER, DIAMETER);
+        g.fillOval((int) x, (int) y, DIAMETER, DIAMETER);
     }
 
     public Rectangle getBounds()
     {
-        return new Rectangle(x, y, DIAMETER, DIAMETER);
+        return new Rectangle((int) x, (int) y, DIAMETER, DIAMETER);
     }
 }
