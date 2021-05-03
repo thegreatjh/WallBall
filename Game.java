@@ -18,7 +18,7 @@ public class Game extends JPanel
 
     Ball ball = new Ball(this);
     Paddle paddle = new Paddle(this);
-    double speed = 1, paddleSpeed = 5;
+    double speed = 1, paddleSpeed = 3;
     int score = 0, level = 1;
 
     private int getScore()
